@@ -6,7 +6,7 @@
 
         public void Increment()
         {
-            Counter++;
+            Counter += 2;
         }
     }
 }
