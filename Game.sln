@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{DAC71A49-05F8-4EE3-9876-855C13E8A083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
