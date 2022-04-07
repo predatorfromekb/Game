@@ -6,4 +6,8 @@
         <UseWindowsForms>true</UseWindowsForms>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Game.Model\Game.Model.csproj" />
+    </ItemGroup>
+
 </Project>

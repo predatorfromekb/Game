@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{DAC71A49-05F8-4EE3-9876-855C13E8A083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Model", "Game.Model\Game.Model.csproj", "{FAF55E6F-364F-40FF-B90C-FB67D694E76B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model.Tests", "Model.Tests\Model.Tests.csproj", "{275F328B-904F-4727-8AD8-F58D57E7B6F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAC71A49-05F8-4EE3-9876-855C13E8A083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF55E6F-364F-40FF-B90C-FB67D694E76B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF55E6F-364F-40FF-B90C-FB67D694E76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF55E6F-364F-40FF-B90C-FB67D694E76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF55E6F-364F-40FF-B90C-FB67D694E76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275F328B-904F-4727-8AD8-F58D57E7B6F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275F328B-904F-4727-8AD8-F58D57E7B6F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275F328B-904F-4727-8AD8-F58D57E7B6F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275F328B-904F-4727-8AD8-F58D57E7B6F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

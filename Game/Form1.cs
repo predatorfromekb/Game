@@ -6,7 +6,7 @@ namespace Game
     {
         public Form1()
         {
-            var model = new Model();
+            var model = new Model.Model();
             var label = new Label()
             {
                 Width = 400,
@@ -29,16 +29,6 @@ namespace Game
                 label.Text = "Clicks Count: " + model.Counter;
             };
             InitializeComponent();
-        }
-    }
-
-    public class Model
-    {
-        public int Counter { get; private set; }
-
-        public void Increment()
-        {
-            Counter++;
         }
     }
 }
