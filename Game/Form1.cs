@@ -23,10 +23,10 @@ namespace Game
             );
             graph.Connect(graph.AddNode().NodeNumber, 1);
 
-            var nodeDiameter = 40;
+            var buttonSize = 30;
             var bigRadius = 200;
-
-            var labels = new Dictionary<int, Label>();
+            
+            var buttons = new Dictionary<int, Button>();
 
             var addNodeBtn = new Button()
             {
@@ -73,29 +73,31 @@ namespace Game
                 foreach (var node in graph.Nodes)
                 {
                     var point = points[node.NodeNumber];
-                    graphics.FillEllipse(
-                        Brushes.Blue,
-                        new Rectangle(
-                            point.X - nodeDiameter / 2, 
-                            point.Y -nodeDiameter / 2, 
-                            nodeDiameter, 
-                            nodeDiameter));
+                    // graphics.FillEllipse(
+                    //     Brushes.Blue,
+                    //     new Rectangle(
+                    //         point.X - nodeDiameter / 2, 
+                    //         point.Y -nodeDiameter / 2, 
+                    //         nodeDiameter, 
+                    //         nodeDiameter));
 
-                    if (labels.ContainsKey(node.NodeNumber))
+                    var pt = new Point(point.X - buttonSize / 2, point.Y - buttonSize / 2);
+                    if (buttons.ContainsKey(node.NodeNumber))
                     {
-                        labels[node.NodeNumber].Location = point;
+                        buttons[node.NodeNumber].Location = pt;
                     }
                     else
                     {
-                        var label = new Label
+                        var button = new Button()
                         {
                             Text = node.NodeNumber.ToString(),
-                            Location = point,
+                            Location = pt,
                             BackColor = Color.Red,
-                            Width = 20
+                            Width = buttonSize,
+                            Height = buttonSize,
                         };
-                        Controls.Add(label);
-                        labels.Add(node.NodeNumber, label);
+                        Controls.Add(button);
+                        buttons.Add(node.NodeNumber, button);
                     }
                 }
             };
