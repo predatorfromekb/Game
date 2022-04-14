@@ -17,6 +17,9 @@ namespace Model.Tests
             
             Assert.AreEqual(graph.Length, 6);
             Assert.AreEqual(graph.Edges.Count(), 3);
+
+            graph.AddNode();
+            Assert.AreEqual(graph.Length, 7);
         }
     }
 }

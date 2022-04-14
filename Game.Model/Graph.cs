@@ -5,14 +5,25 @@ namespace Game.Model
 {
 	public class Graph
 	{
-		private Node[] nodes;
+		private List<Node> nodes;
 
 		public Graph(int nodesCount)
 		{
-			nodes = Enumerable.Range(0, nodesCount).Select(z => new Node(z)).ToArray();
+			nodes = Enumerable
+				.Range(0, nodesCount)
+				.Select(z => new Node(z))
+				.ToList();
 		}
 
-		public int Length => nodes.Length;
+		public Node AddNode()
+		{
+			var node = new Node(nodes.Count);
+			nodes.Add(node);
+			return node;
+		}
+		
+
+		public int Length => nodes.Count;
 
 		public Node this[int index] => nodes[index];
 
