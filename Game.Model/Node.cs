@@ -21,13 +21,8 @@ namespace Game.Model
                 return edges.Select(z => z.OtherNode(this));
             }
         }
-        public IEnumerable<Edge> IncidentEdges
-        {
-            get
-            {
-                foreach (var e in edges) yield return e;
-            }
-        }
+        public IEnumerable<Edge> IncidentEdges => edges;
+
         public static Edge Connect(Node node1, Node node2, Graph graph)
         {
             if (!graph.Nodes.Contains(node1) || !graph.Nodes.Contains(node2)) throw new ArgumentException();

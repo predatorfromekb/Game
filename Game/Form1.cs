@@ -8,6 +8,11 @@ namespace Game
 {
     public partial class Form1 : Form
     {
+        // TODO
+        // 1. 2 балла - Динамическое добавление вершин и ребер + удаление вершин и ребер
+        // 2. 2 балла - BFS и DFS - визуализация процесса
+        // 3. 2 балла - Поиск кратчайшего пути - визуализация результата
+        // 4. 2 балла - drag&drop
         public Form1()
         {
             var graph = Graph.MakeGraph(
@@ -66,11 +71,6 @@ namespace Game
                     };
                     
                     Controls.Add(label);
-                    
-                    
-
-                    // var incidentNodes = graph.
-                    // graphics.DrawLine();
                 }
             };
             InitializeComponent();
