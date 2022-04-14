@@ -1,3 +1,5 @@
+using System.Linq;
+using Game.Model;
 using NUnit.Framework;
 
 namespace Model.Tests
@@ -7,10 +9,14 @@ namespace Model.Tests
         [Test]
         public void Test1()
         {
-            var model = new Game.Model.Model();
-            Assert.AreEqual(0, model.Counter);
-            model.Increment();
-            Assert.AreEqual(1, model.Counter);
+            var graph = Graph.MakeGraph(
+                0, 1,
+                2, 3,
+                4, 5
+            );
+            
+            Assert.AreEqual(graph.Length, 6);
+            Assert.AreEqual(graph.Edges.Count(), 3);
         }
     }
 }
